@@ -1,0 +1,22 @@
+.container {
+  height: 100%;
+}
+
+.titlebar {
+  height: 20%;
+}
+
+.hbox {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.vbox {
+  display: flex;
+  height: 60%;
+  margin: auto;
+  width: 80%;
+}
