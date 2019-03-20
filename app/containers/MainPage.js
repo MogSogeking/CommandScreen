@@ -1,6 +1,6 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import MainMenu from '../components/MainMenu/MainMenu';
+import MainMenuPage from '../components/Pages/MainMenuPage/MainMenuPage';
 import * as CounterActions from '../actions/counter';
 
 function mapStateToProps(state) {
@@ -16,4 +16,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(MainMenu);
+)(MainMenuPage);

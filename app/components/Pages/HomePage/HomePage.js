@@ -1,12 +1,12 @@
 // @flow
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import routes from '../constants/routes';
-import styles from './Home.css';
+import routes from '../../../constants/routes';
+import styles from './HomePage.css';
 
 type Props = {};
 
-export default class Home extends Component<Props> {
+export default class HomePage extends Component<Props> {
   props: Props;
 
   render() {

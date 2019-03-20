@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Command from '../components/Command/Command';
+import CommandPage from '../components/Pages/CommandPage/CommandPage';
 
 function mapStateToProps(state) {
   return {
@@ -10,4 +10,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   undefined
-)(Command);
+)(CommandPage);

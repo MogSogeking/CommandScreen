@@ -1,14 +1,14 @@
 // @flow
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import routes from '../../constants/routes';
-import styles from './MainMenu.css';
+import routes from '../../../constants/routes';
+import styles from './MainMenuPage.css';
 
-import Brick from '../Brick/Brick';
+import Brick from '../../Brick/Brick';
 
 type Props = {};
 
-export default class MainMenu extends Component<Props> {
+export default class MainMenuPage extends Component<Props> {
   props: Props;
 
   state = {

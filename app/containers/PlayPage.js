@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Play from '../components/Play/Play';
+import PlayPage from '../components/Pages/PlayPage/PlayPage';
 
 function mapStateToProps(state) {
   return {
@@ -10,4 +10,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   undefined
-)(Play);
+)(PlayPage);
