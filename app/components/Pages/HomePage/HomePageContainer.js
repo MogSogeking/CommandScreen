@@ -1,5 +1,8 @@
+// @flow
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import ExtrasPage from '../components/Pages/ExtrasPage/ExtrasPage';
+import HomePage from './HomePage';
+
 
 function mapStateToProps(state) {
   return {
@@ -10,4 +13,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   undefined
-)(ExtrasPage);
+)(HomePage);

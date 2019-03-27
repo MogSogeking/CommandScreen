@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import PlayPage from '../components/Pages/PlayPage/PlayPage';
+import PlayPage from './PlayPage';
 
 function mapStateToProps(state) {
   return {

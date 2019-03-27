@@ -2,12 +2,12 @@ import React from 'react';
 import { Switch, Route } from 'react-router';
 import routes from './constants/routes';
 import App from './containers/App';
-import HomePage from './containers/HomePage';
-import CounterPage from './containers/CounterPage';
-import MainPage from './containers/MainPage';
-import CommandPage from './containers/CommandPage';
-import PlayPage from './containers/PlayPage';
-import ExtrasPage from './containers/ExtrasPage';
+import HomePage from './components/Pages/HomePage/HomePageContainer';
+import CounterPage from './containers/CounterPageContainer';
+import MainPage from './components/Pages/MainMenuPage/MainMenuPageContainer';
+import CommandPage from './components/Pages/CommandPage/CommandPageContainer';
+import PlayPage from './components/Pages/PlayPage/PlayPageContainer';
+import ExtrasPage from './components/Pages/ExtrasPage/ExtrasPageContainer';
 
 export default () => (
   <App>

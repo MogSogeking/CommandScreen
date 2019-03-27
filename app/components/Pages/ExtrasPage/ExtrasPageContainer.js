@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CommandPage from '../components/Pages/CommandPage/CommandPage';
+import ExtrasPage from './ExtrasPage';
 
 function mapStateToProps(state) {
   return {
@@ -10,4 +10,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   undefined
-)(CommandPage);
+)(ExtrasPage);

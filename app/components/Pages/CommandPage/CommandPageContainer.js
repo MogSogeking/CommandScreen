@@ -1,8 +1,5 @@
-// @flow
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import HomePage from '../components/Pages/HomePage/HomePage';
-
+import CommandPage from './CommandPage';
 
 function mapStateToProps(state) {
   return {
@@ -13,4 +10,4 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   undefined
-)(HomePage);
+)(CommandPage);

@@ -1,7 +1,7 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import MainMenuPage from '../components/Pages/MainMenuPage/MainMenuPage';
-import * as CounterActions from '../actions/counter';
+import MainMenuPage from './MainMenuPage';
+import * as CounterActions from '../../../actions/counter';
 
 function mapStateToProps(state) {
   return {
