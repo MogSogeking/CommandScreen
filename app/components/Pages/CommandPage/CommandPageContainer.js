@@ -1,13 +1,13 @@
 import { connect } from 'react-redux';
 import CommandPage from './CommandPage';
+import { loadProducts } from '../../../actions/command'
 
-function mapStateToProps(state) {
-  return {
-    counter: state.counter
-  };
-}
+const mapDispatchToProps = dispatch => ({
+  load: () => dispatch(loadProducts())
+})
+
 
 export default connect(
-  mapStateToProps,
-  undefined
+  undefined,
+  mapDispatchToProps
 )(CommandPage);

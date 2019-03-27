@@ -8,9 +8,11 @@ import LocalBar from '@material-ui/icons/LocalBar'
 import LocalCafe from '@material-ui/icons/LocalCafe'
 import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
+import CommandTabs from '../../CommandTabs/CommandTabs';
 
-type Props = {};
-
+type Props = {
+  load: () => void
+};
 export default class CommandPage extends Component<Props> {
   props: Props;
 
@@ -22,21 +24,16 @@ export default class CommandPage extends Component<Props> {
     this.setState({ value })
   }
 
+  componentDidMount() {
+    this.props.load()
+  }
+
   render() {
     const { value } = this.state;
     return (
       <div className={styles.container} data-tid="container">
         <h2>Command</h2>
-        <div>
-          <Tabs value={value} onChange={this.handleChange}>
-            <Tab icon={<Fastfood />} />
-            <Tab icon={<LocalBar />} />
-            <Tab icon={<LocalCafe />} />
-          </Tabs>
-        {value === 0 && <div>Item One</div>}
-        {value === 1 && <div>Item Two</div>}
-        {value === 2 && <div>Item Three</div>}
-        </div>
+        <CommandTabs />
         <Link to={routes.HOME}>Déconnexion</Link>
       </div>
     );
