@@ -9,7 +9,7 @@ import Restaurant from '@material-ui/icons/Restaurant'
 import Fastfood from '@material-ui/icons/Fastfood'
 
 import styles from './CommandTabs.css';
-import ProductItem from '../ProductItem/ProductItem'
+import ProductItem from '../ProductItem/ProductItemContainer'
 
 type Props = {
   products: object,

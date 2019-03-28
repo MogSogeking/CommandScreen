@@ -9,6 +9,7 @@ import LocalCafe from '@material-ui/icons/LocalCafe'
 import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
 import CommandTabs from '../../CommandTabs/CommandTabsContainer';
+import CommandColumn from '../../CommandColumn/CommandColumn';
 
 export default class CommandPage extends Component<Props> {
   props: Props;
@@ -17,7 +18,10 @@ export default class CommandPage extends Component<Props> {
     return (
       <div className={styles.container} data-tid="container">
         <h2>Command</h2>
-        <CommandTabs />
+        <div className={styles.command}>
+          <CommandTabs />
+          <CommandColumn />
+        </div>
         <Link to={routes.HOME}>Déconnexion</Link>
       </div>
     );
