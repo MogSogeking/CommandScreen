@@ -1,1 +1,3 @@
-export const getProducts = state => state.command && state.command.products || {}
+import { get } from 'immutadot'
+
+export const getProducts = state => get(state, 'command.products', {})

@@ -8,7 +8,7 @@ import LocalBar from '@material-ui/icons/LocalBar'
 import LocalCafe from '@material-ui/icons/LocalCafe'
 import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
-import CommandTabs from '../../CommandTabs/CommandTabs';
+import CommandTabs from '../../CommandTabs/CommandTabsContainer';
 
 type Props = {
   load: () => void

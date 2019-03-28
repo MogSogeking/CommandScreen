@@ -910,6 +910,11 @@
   version "5.5.0"
   resolved "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-5.5.0.tgz#0c6c53823d04457ae669cd19567b8a21dbb4fcfd"
 
+"@hoc-react-loader/core@^7.0.3":
+  version "7.0.3"
+  resolved "https://registry.yarnpkg.com/@hoc-react-loader/core/-/core-7.0.3.tgz#3289a211421f886495ea353e335474a87a42ca54"
+  integrity sha512-vmMDaErCKydY0TO0TACUPL965jajZp9CNL6No6waOBCDWrvrvhz6+iP5IKSVVT/mM43s/xd8Tw32fD4fep9qMw==
+
 "@iamstarkov/listr-update-renderer@0.4.1":
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/@iamstarkov/listr-update-renderer/-/listr-update-renderer-0.4.1.tgz#d7c48092a2dcf90fd672b6c8b458649cb350c77e"
@@ -6146,6 +6151,13 @@ ignore@^5.0.4:
 immutable@^3.8.1:
   version "3.8.2"
   resolved "https://registry.npmjs.org/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
+
+immutadot@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/immutadot/-/immutadot-1.0.0.tgz#9d99bffde37666755aff0b6f9cb7df8e5a4b4231"
+  integrity sha1-nZm//eN2ZnVa/wtvnLffjlpLQjE=
+  dependencies:
+    babel-runtime "^6.26.0"
 
 import-lazy@^2.1.0:
   version "2.1.0"

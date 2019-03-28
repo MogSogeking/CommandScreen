@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
+import { compose } from 'redux'
+import loader from '@hoc-react-loader/core'
 import CommandTabs from './CommandTabs';
-import getProducts from '../../selectors/command'
+import { getProducts } from '../../selectors/command'
+import { loadProducts } from '../../actions/command'
 
-function mapStateToProps(state) {
-  return {
-    products: getProducts(state),
-  };
-}
+const mapStateToProps = state => ({
+  products: getProducts(state),
+})
 
-export default connect(
-  mapStateToProps,
-  undefined
+const mapDispatchToProps = dispatch => ({
+  load: () => dispatch(loadProducts()),
+})
+
+export default compose(
+  connect(mapStateToProps, mapDispatchToProps),
+  loader(),
 )(CommandTabs);

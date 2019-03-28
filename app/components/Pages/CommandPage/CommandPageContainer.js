@@ -3,7 +3,7 @@ import CommandPage from './CommandPage';
 import { loadProducts } from '../../../actions/command'
 
 const mapDispatchToProps = dispatch => ({
-  load: () => dispatch(loadProducts())
+  load: () => {}
 })
 
 
