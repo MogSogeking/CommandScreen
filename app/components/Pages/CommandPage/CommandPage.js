@@ -10,26 +10,10 @@ import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
 import CommandTabs from '../../CommandTabs/CommandTabsContainer';
 
-type Props = {
-  load: () => void
-};
 export default class CommandPage extends Component<Props> {
   props: Props;
 
-  state = {
-    value: 0,
-  };
-
-  handleChange = (event, value) => {
-    this.setState({ value })
-  }
-
-  componentDidMount() {
-    this.props.load()
-  }
-
   render() {
-    const { value } = this.state;
     return (
       <div className={styles.container} data-tid="container">
         <h2>Command</h2>

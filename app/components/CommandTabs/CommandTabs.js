@@ -7,7 +7,9 @@ import LocalDrink from '@material-ui/icons/LocalDrink'
 import LocalCafe from '@material-ui/icons/LocalCafe'
 import Restaurant from '@material-ui/icons/Restaurant'
 import Fastfood from '@material-ui/icons/Fastfood'
+
 import styles from './CommandTabs.css';
+import ProductItem from '../ProductItem/ProductItem'
 
 type Props = {
   products: object,
@@ -24,6 +26,11 @@ export default class CommandTabs extends Component<Props> {
     this.setState({ value })
   }
 
+  renderProducts = (value) => {
+    const categoryValue = ['alcohol', 'soft', 'hot', 'meal', 'snack']
+    return this.props.products[categoryValue[value]] && this.props.products[categoryValue[value]].map(item => <ProductItem product={item} />)
+  }
+
   render() {
     const { value } = this.state;
     return (
@@ -35,9 +42,9 @@ export default class CommandTabs extends Component<Props> {
           <Tab label="Repas" icon={<Restaurant />} />
           <Tab label="Snacks" icon={<Fastfood />} />
         </Tabs>
-      {value === 0 && <div>Item One</div>}
-      {value === 1 && <div>Item Two</div>}
-      {value === 2 && <div>Item Three</div>}
+        <div className={styles.tabContent}>
+          {this.renderProducts(value)}
+        </div>
       </div>
     );
   }
