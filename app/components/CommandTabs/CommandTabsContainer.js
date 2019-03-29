@@ -2,8 +2,8 @@ import { connect } from 'react-redux';
 import { compose } from 'redux'
 import loader from '@hoc-react-loader/core'
 import CommandTabs from './CommandTabs';
-import { getProducts } from '../../selectors/command'
-import { loadProducts } from '../../actions/command'
+import { getProducts } from '../../redux/selectors/command'
+import { loadProducts } from '../../redux/actions/command'
 
 const mapStateToProps = state => ({
   products: getProducts(state),

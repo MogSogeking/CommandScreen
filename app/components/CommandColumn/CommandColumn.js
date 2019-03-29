@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import styles from './CommandColumn.css'
 import ProductDescription from '../ProductDescription/ProductDescriptionContainer';
-import CommandSummary from '../CommandSummary/CommandSummary';
+import CommandSummary from '../CommandSummary/CommandSummaryContainer';
 
 type Props = {
 

@@ -1,7 +1,17 @@
 import { connect } from 'react-redux'
 import CommandSummary from './CommandSummary'
-import getSelectedProduct from '../../selectors/command'
+import { getCart } from '../../redux/selectors/command'
+import { removeFromCart } from '../../redux/actions/command'
 
 const mapStateToProps = state => ({
-  product: getSelectedProduct(state)
+  cart: getCart(state),
 })
+
+const mapDispatchToProps = dispatch => ({
+  removeFromCart: product => dispatch(removeFromCart(product)),
+})
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(CommandSummary)

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import ProductDescription from './ProductDescription'
-import { getSelectedProduct } from '../../selectors/command'
+import { getSelectedProduct } from '../../redux/selectors/command'
 
 const mapStateToProps = state => ({
   product: getSelectedProduct(state)
