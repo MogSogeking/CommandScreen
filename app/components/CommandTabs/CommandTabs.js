@@ -28,7 +28,7 @@ export default class CommandTabs extends Component<Props> {
 
   renderProducts = (value) => {
     const categoryValue = ['alcohol', 'soft', 'hot', 'meal', 'snack']
-    return this.props.products[categoryValue[value]] && this.props.products[categoryValue[value]].map(item => <ProductItem product={item} />)
+    return this.props.products[categoryValue[value]] && this.props.products[categoryValue[value]].map(item => <ProductItem key={item.id} product={item} />)
   }
 
   render() {
