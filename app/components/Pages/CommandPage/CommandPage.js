@@ -10,6 +10,7 @@ import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
 import CommandTabs from '../../CommandTabs/CommandTabsContainer';
 import CommandColumn from '../../CommandColumn/CommandColumn';
+import LogoutButton from '../../LogoutButton/LogoutButton';
 
 export default class CommandPage extends Component<Props> {
   props: Props;
@@ -22,7 +23,7 @@ export default class CommandPage extends Component<Props> {
           <CommandTabs />
           <CommandColumn />
         </div>
-        <Link to={routes.HOME}>Déconnexion</Link>
+        <LogoutButton />
       </div>
     );
   }

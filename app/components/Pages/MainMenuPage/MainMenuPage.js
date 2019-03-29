@@ -1,10 +1,11 @@
 // @flow
 import React, { Component } from 'react';
-import { Link, Redirect } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import routes from '../../../constants/routes';
 import styles from './MainMenuPage.css';
 
 import Brick from '../../Brick/Brick';
+import LogoutButton from '../../LogoutButton/LogoutButton';
 
 type Props = {};
 
@@ -56,7 +57,7 @@ export default class MainMenuPage extends Component<Props> {
             </Brick>
           </div>
         </div>
-        <Link to={routes.HOME}>Déconnexion</Link>
+        <LogoutButton />
       </div>
     );
   }
