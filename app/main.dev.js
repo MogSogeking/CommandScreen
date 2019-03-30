@@ -10,7 +10,7 @@
  *
  * @flow
  */
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, ipcMain } from 'electron';
 import { autoUpdater } from 'electron-updater';
 import log from 'electron-log';
 import { NFC } from 'nfc-pcsc';
@@ -58,6 +58,7 @@ nfc.on('reader', reader => {
 
   reader.on('card', card => {
     console.log(`${reader.reader.name} card detected`, card);
+    mainWindow.webContents.send('card', card.uid)
   });
 
   reader.on('card.off', card => {
