@@ -7,7 +7,7 @@ import styles from './LogoutButton.css'
 
 
 type Props = {
-
+  logout: () => {},
 }
 
 export default class LogoutButton extends Component<Props> {
@@ -19,6 +19,7 @@ export default class LogoutButton extends Component<Props> {
 
   render() {
     const { redirect } = this.state;
+    const { logout } = this.props;
 
     if(redirect) {
       return <Redirect to="/home" />;
@@ -26,6 +27,7 @@ export default class LogoutButton extends Component<Props> {
 
     return (
       <Button variant="contained" color="secondary" onClick={() => {
+        logout()
         this.setState({ redirect: true });
       }}>
         Déconnexion

@@ -10,7 +10,7 @@ import routes from '../../../constants/routes';
 import styles from './CommandPage.css';
 import CommandTabs from '../../CommandTabs/CommandTabsContainer';
 import CommandColumn from '../../CommandColumn/CommandColumn';
-import LogoutButton from '../../LogoutButton/LogoutButton';
+import LogoutButton from '../../LogoutButton/LogoutButtonContainer';
 
 export default class CommandPage extends Component<Props> {
   props: Props;
