@@ -6,7 +6,7 @@ type Props = {
   product: object,
   selectProduct: () => {},
   addToCart: () => {},
-}
+};
 
 export default class ProductItem extends Component<Props> {
   props: Props;

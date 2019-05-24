@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import styles from './ProductDescription.css'
 
 type Props = {
-  product: object
-}
+  product: object,
+};
 
 export default class ProductDescription extends Component<Props> {
   render() {

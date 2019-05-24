@@ -1,7 +1,6 @@
 // @flow
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import routes from '../../../constants/routes';
 import styles from './MainMenuPage.css';
 
 import Brick from '../../Brick/Brick';

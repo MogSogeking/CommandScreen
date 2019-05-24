@@ -6,7 +6,7 @@ import CommandSummary from '../CommandSummary/CommandSummaryContainer';
 
 type Props = {
 
-}
+};
 
 export default class CommandColumn extends Component<Props> {
   props: Props;

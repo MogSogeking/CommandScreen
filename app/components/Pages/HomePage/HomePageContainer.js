@@ -1,5 +1,3 @@
-// @flow
-import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import HomePage from './HomePage';
 import { checkProfile } from '../../../redux/actions/global'

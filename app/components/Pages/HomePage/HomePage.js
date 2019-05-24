@@ -22,7 +22,8 @@ export default class HomePage extends Component<Props> {
   }
 
   handleCardConnection = (e, uid) => {
-    this.props.checkProfile(uid)
+    const { checkProfile } = this.props
+    checkProfile(uid)
   }
 
   render() {

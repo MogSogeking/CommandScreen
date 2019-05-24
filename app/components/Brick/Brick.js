@@ -4,7 +4,7 @@ import styles from './Brick.css';
 
 type Props = {
   children: Node,
-  click: () => void
+  click: () => void,
 };
 
 export default class Brick extends Component<Props> {
