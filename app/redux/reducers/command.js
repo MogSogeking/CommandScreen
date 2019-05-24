@@ -1,10 +1,10 @@
-import { makeReducer } from '../../utils/utils'
-
 import {
   set,
   get,
   unset,
 } from 'immutadot'
+
+import { makeReducer } from '../../utils/utils'
 
 import {
   LOAD_PRODUCTS,

@@ -1,8 +1,8 @@
-import { makeReducer } from '../../utils/utils'
-
 import {
   set,
 } from 'immutadot'
+import { makeReducer } from '../../utils/utils'
+
 
 import {
   CHECK_PROFILE, PURGE_PROFILE
@@ -17,9 +17,8 @@ const actions = {
   [CHECK_PROFILE]: (state, { profile }) => {
     if(!profile) {
       return state
-    } else {
-      return set(state, 'profile', profile)
     }
+    return set(state, 'profile', profile)
   },
   [PURGE_PROFILE]: state => set(state, 'profile', {})
 }
