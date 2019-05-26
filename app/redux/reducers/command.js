@@ -11,6 +11,7 @@ import {
   SELECT_PRODUCT,
   ADD_TO_CART,
   REMOVE_FROM_CART,
+  PURGE_CART,
 } from '../actions/command'
 
 
@@ -38,7 +39,8 @@ const actions = {
     }
 
     return set(state, `cart.${product.id}.quantity`, quantity-1)
-  }
+  },
+  [PURGE_CART]: state => set(state, 'cart', {})
 }
 
 export const command = makeReducer(initState, actions)

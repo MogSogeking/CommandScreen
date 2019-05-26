@@ -5,6 +5,7 @@ import styles from './MainMenuPage.css';
 
 import Brick from '../../Brick/Brick';
 import LogoutButton from '../../LogoutButton/LogoutButtonContainer';
+import MoneyLine from '../../MoneyLine/MoneyLineContainer';
 
 type Props = {
   profile: Object,
@@ -33,11 +34,7 @@ export default class MainMenuPage extends Component<Props> {
       <div className={styles.container} data-tid="container">
         <h2 className={styles.titlebar}>Main Menu</h2>
         <div className={styles.mainBlock}>
-          <div className={styles.moneyLine}>
-            <p className={styles.textLeft}>Crédits: {profile.credits}cr.</p>
-            <p className={styles.textRight}>Solde: {profile.money}€</p>
-          </div>
-
+          <MoneyLine />
           <div className={styles.vbox}>
             <div className={styles.hbox}>
               <Brick

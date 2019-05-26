@@ -16,6 +16,4 @@ export const checkProfile = cardUid => dispatch => {
 
 export const PURGE_PROFILE = 'PURGE_PROFILE'
 
-export const purgeProfile = () => ({
-  type: PURGE_PROFILE,
-})
+export const purgeProfile = () => ({ type: PURGE_PROFILE })

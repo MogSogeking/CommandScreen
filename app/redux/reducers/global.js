@@ -1,12 +1,17 @@
 import {
   set,
 } from 'immutadot'
+
 import { makeReducer } from '../../utils/utils'
 
+import {
+  CHECK_PROFILE,
+  PURGE_PROFILE,
+} from '../actions/global'
 
 import {
-  CHECK_PROFILE, PURGE_PROFILE
-} from '../actions/global'
+  UPDATE_PROFILE,
+} from '../actions/command'
 
 
 const initState = {
@@ -20,7 +25,11 @@ const actions = {
     }
     return set(state, 'profile', profile)
   },
-  [PURGE_PROFILE]: state => set(state, 'profile', {})
+  [PURGE_PROFILE]: state => set(state, 'profile', {}),
+  [UPDATE_PROFILE]: (state, { profile }) => {
+    console.log(profile)
+    return set(state, 'profile', profile)
+  },
 }
 
 export const global = makeReducer(initState, actions)
