@@ -1,19 +1,12 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import MainMenuPage from './MainMenuPage';
-import * as CounterActions from '../../../redux/actions/counter';
+import { getProfile } from '../../../redux/selectors/global'
 
-function mapStateToProps(state) {
-  return {
-    counter: state.counter
-  };
-}
-
-function mapDispatchToProps(dispatch) {
-  return bindActionCreators(CounterActions, dispatch);
-}
+const mapStateToProps = state => ({
+  profile: getProfile(state),
+})
 
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
 )(MainMenuPage);

@@ -11,7 +11,7 @@ export default class CommandPage extends Component<Props> {
   render() {
     return (
       <div className={styles.container} data-tid="container">
-        <h2>Command</h2>
+        <h2 className={styles.titlebar}>Command</h2>
         <div className={styles.command}>
           <CommandTabs />
           <CommandColumn />

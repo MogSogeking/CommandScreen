@@ -16,7 +16,29 @@
 
 .vbox {
   display: flex;
-  height: 60%;
+  height: 95%;
+  width: 100%;
+}
+
+.mainBlock {
+  height: 65%;
   margin: auto;
   width: 80%;
+}
+
+.moneyLine {
+  display: flex;
+  height: 5%;
+  width: 100%;
+}
+
+.textLeft {
+  margin: 0 0 0 15px;
+  width: 50%;
+}
+
+.textRight {
+  margin: 0;
+  text-align: right;
+  width: 50%;
 }

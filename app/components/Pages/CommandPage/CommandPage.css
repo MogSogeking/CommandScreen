@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+.titlebar {
+  height: 10%;
+}
+
 .command {
   display: flex;
   margin: auto;
