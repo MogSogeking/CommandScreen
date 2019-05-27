@@ -1,0 +1,19 @@
+.container {
+  height: 5%;
+  width: 100%
+}
+
+.backgroundBar {
+  background-color: darkslateblue;
+  height: 40%;
+  width: 100%;
+}
+
+.foregroundBar {
+  background-color: slateblue;
+  height: 100%;
+}
+
+.details {
+  height: 60%;
+}

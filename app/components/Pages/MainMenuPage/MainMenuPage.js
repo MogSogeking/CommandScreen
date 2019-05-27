@@ -6,6 +6,7 @@ import styles from './MainMenuPage.css';
 import Brick from '../../Brick/Brick';
 import LogoutButton from '../../LogoutButton/LogoutButtonContainer';
 import MoneyLine from '../../MoneyLine/MoneyLineContainer';
+import ExpBar from '../../ExpBar/ExpBarContainer';
 
 type Props = {
   profile: Object,
@@ -62,6 +63,7 @@ export default class MainMenuPage extends Component<Props> {
               </Brick>
             </div>
           </div>
+        <ExpBar />
         </div>
         <LogoutButton />
       </div>
