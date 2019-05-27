@@ -3,8 +3,12 @@
   width: 100%;
 }
 
-.titlebar {
+.header {
   height: 10%;
+}
+
+.titlebar {
+  text-align: center;
 }
 
 .mainBlock {
