@@ -1,0 +1,25 @@
+.container {
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  height: 10%;
+}
+
+.titlebar {
+  text-align: center;
+}
+
+.mainBlock {
+  height: 80%;
+  margin: auto;
+  width: 80%;
+}
+
+.command {
+  display: flex;
+  margin: auto;
+  height: 95%;
+  width: 100%;
+}

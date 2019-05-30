@@ -1,8 +1,8 @@
 {
   "HOME": "/",
-  "COUNTER": "/counter",
   "MAIN_MENU": "/mainmenu",
   "COMMAND": "/command",
   "PLAY": "/play",
-  "EXTRAS": "/extras"
+  "EXTRAS": "/extras",
+  "ACHIEVEMENTS": "/achievements"
 }

@@ -36,7 +36,7 @@ export default class HomePage extends Component<Props> {
       <div className={styles.container} data-tid="container">
         <h2>Bienvenue au Multiplayer</h2>
         <p>Passez votre carte pour commander</p>
-        <Link to={routes.MAIN_MENU}>Main menu</Link>
+        <Link to={routes.ACHIEVEMENTS}>Main menu</Link>
       </div>
     );
   }
