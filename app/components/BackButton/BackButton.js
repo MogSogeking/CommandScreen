@@ -7,7 +7,7 @@ type Props = {
   redirection: String,
 };
 
-export default class LogoutButton extends Component<Props> {
+export default class BackButton extends Component<Props> {
   props: Props
 
   state = {

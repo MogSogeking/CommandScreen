@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styles from './AchievementsPage.css'
 import BackButton from '../../BackButton/BackButton'
-import LogoutButton from '../../LogoutButton/LogoutButton'
+import LogoutButton from '../../LogoutButton/LogoutButtonContainer'
 
 
 type Props = {

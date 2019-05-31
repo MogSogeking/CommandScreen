@@ -5,7 +5,7 @@ import routes from '../../../constants/routes';
 import styles from './ExtrasPage.css';
 import BackButton from '../../BackButton/BackButton'
 import Brick from '../../Brick/Brick'
-import LogoutButton from '../../LogoutButton/LogoutButton'
+import LogoutButton from '../../LogoutButton/LogoutButtonContainer'
 
 type Props = {};
 

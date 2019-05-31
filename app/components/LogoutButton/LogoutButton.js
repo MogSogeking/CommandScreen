@@ -19,7 +19,7 @@ export default class LogoutButton extends Component<Props> {
     const { logout } = this.props;
 
     if(redirect) {
-      return <Redirect to="/home" />;
+      return <Redirect to="/" />;
     }
 
     return (
