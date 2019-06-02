@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import styles from './AchievementsTabs.css'
-import AchievementItem from '../AchievementItem/AchievementItem'
+import AchievementItem from '../AchievementItem/AchievementItemContainer'
 
 type Props = {
   achievements: object,
+  profile: object,
 }
 
-export class AchievementsTabs extends Component<Props> {
+export default class AchievementsTabs extends Component<Props> {
   props: Props
 
   state = {
@@ -20,9 +21,18 @@ export class AchievementsTabs extends Component<Props> {
   }
 
   renderProducts = (value) => {
-    const { achievements } = this.props
+    const { achievements, profile } = this.props
     const categoryValue = ['general', 'events']
-    return achievements[categoryValue[value]] && achievements[categoryValue[value]].map(item => <AchievementItem key={item.id} product={item} />)
+    return achievements[categoryValue[value]] && achievements[categoryValue[value]].map(item => {
+      const findCompleted = achievement => {
+        return achievement.id === item.id
+      }
+      const achievementWithCompletion = Object.assign({isCompleted: !!profile.achievements.find(findCompleted)}, item)
+      console.log(profile.achievements)
+      console.log(achievementWithCompletion)
+      return <AchievementItem key={item.id} achievement={achievementWithCompletion} />
+    })
+      
   }
 
   render() {

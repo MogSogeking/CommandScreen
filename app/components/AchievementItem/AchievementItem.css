@@ -1,6 +1,21 @@
 .container {
-  border: 1px solid;
+  outline: 1px solid;
   height: 100px;
   margin: 5px;
   width: 100px;
+}
+
+.selectedContainer {
+  outline: 2px solid;
+  height: 100px;
+  margin: 5px;
+  width: 100px;
+}
+
+.unlockedAchievement {
+  outline-color: white;
+}
+
+.lockedAchievement {
+  outline-color: gray;
 }
