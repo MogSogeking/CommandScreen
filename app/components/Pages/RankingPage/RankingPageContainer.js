@@ -1,7 +1,7 @@
 import { connect } from 'react-redux';
-import ExtrasPage from './ExtrasPage';
+import RankingPage from './RankingPage';
 
 export default connect(
   undefined,
   undefined
-)(ExtrasPage);
+)(RankingPage);

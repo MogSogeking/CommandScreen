@@ -4,5 +4,6 @@
   "COMMAND": "/command",
   "PLAY": "/play",
   "EXTRAS": "/extras",
-  "ACHIEVEMENTS": "/achievements"
+  "ACHIEVEMENTS": "/achievements",
+  "RANKING": "/ranking"
 }

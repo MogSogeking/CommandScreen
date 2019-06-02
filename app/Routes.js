@@ -8,6 +8,7 @@ import CommandPage from './components/Pages/CommandPage/CommandPageContainer';
 import PlayPage from './components/Pages/PlayPage/PlayPageContainer';
 import ExtrasPage from './components/Pages/ExtrasPage/ExtrasPageContainer';
 import AchievementsPage from './components/Pages/AchievementsPage/AchievementsPageContainer';
+import RankingPage from './components/Pages/RankingPage/RankingPageContainer'
 
 export default () => (
   <App>
@@ -18,6 +19,7 @@ export default () => (
       <Route path={routes.PLAY} component={PlayPage} />
       <Route path={routes.EXTRAS} component={ExtrasPage} />
       <Route path={routes.ACHIEVEMENTS} component={AchievementsPage} />
+      <Route path={routes.RANKING} component={RankingPage} />
     </Switch>
   </App>
 );

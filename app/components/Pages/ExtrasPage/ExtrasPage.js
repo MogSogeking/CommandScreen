@@ -20,6 +20,8 @@ export default class ExtrasPage extends Component<Props> {
     const { redirect } = this.state;
     if (redirect === 'achievements') {
       return <Redirect push to="/achievements" />;
+    } else if (redirect === 'ranking') {
+      return <Redirect push to="/ranking" />
     }
 
     return (
@@ -49,10 +51,10 @@ export default class ExtrasPage extends Component<Props> {
               </Brick>
               <Brick
                 click={() => {
-                  this.setState({ redirect: 'achievements' });
+                  this.setState({ redirect: 'ranking' });
                 }}
               >
-                <p>Achievements</p>
+                <p>Ranking</p>
               </Brick>
             </div>
           </div>
