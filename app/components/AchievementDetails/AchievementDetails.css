@@ -1,10 +1,24 @@
 .container {
-  height: 100%;
-  width: 100%;
-}
-
-.advancement {
   height: 40%;
   width: 100%;
 }
 
+.advancement {
+  display: flex;
+  height: 30%;
+  width: 100%;
+}
+
+.description {
+  height: 70%;
+  width: 100%;
+}
+
+.obtain {
+  text-align: right;
+  width: 50%
+}
+
+.gift {
+  width: 50%;
+}

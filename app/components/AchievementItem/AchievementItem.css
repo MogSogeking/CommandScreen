@@ -19,3 +19,7 @@
 .lockedAchievement {
   outline-color: gray;
 }
+
+.secretAchievement {
+  outline-color: black;
+}

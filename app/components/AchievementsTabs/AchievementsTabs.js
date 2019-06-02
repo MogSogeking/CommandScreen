@@ -32,7 +32,6 @@ export default class AchievementsTabs extends Component<Props> {
       console.log(achievementWithCompletion)
       return <AchievementItem key={item.id} achievement={achievementWithCompletion} />
     })
-      
   }
 
   render() {

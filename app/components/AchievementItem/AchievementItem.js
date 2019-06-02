@@ -13,7 +13,7 @@ export default class AchievementItem extends Component<Props> {
   render() {
     const { achievement, selectAchievement, selectedAchievement } = this.props
     const selectedClass = selectedAchievement.id === achievement.id ? styles.selectedContainer : styles.container
-    const completedClass = achievement.isCompleted ? styles.unlockedAchievement : styles.lockedAchievement
+    const completedClass = achievement.isCompleted ? styles.unlockedAchievement : (achievement.isSecret ? styles.secretAchievement : styles.lockedAchievement)
     const containerClassName = `${selectedClass} ${completedClass}`
 
     return (
