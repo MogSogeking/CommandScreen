@@ -5,6 +5,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack'
 
 type Props = {
   redirection: String,
+  click: () => {},
 };
 
 export default class BackButton extends Component<Props> {
@@ -16,7 +17,7 @@ export default class BackButton extends Component<Props> {
 
   render() {
     const { redirect } = this.state;
-    const { redirection } = this.props;
+    const { redirection, click } = this.props;
 
     if(redirect) {
       return <Redirect to={redirection} />;
@@ -24,6 +25,7 @@ export default class BackButton extends Component<Props> {
 
     return (
       <Button variant="contained" color="secondary" onClick={() => {
+        click && click()
         this.setState({ redirect: true });
       }}>
         <ArrowBackIcon />
