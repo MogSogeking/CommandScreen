@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import styles from './RankingPage.css'
 import BackButton from '../../BackButton/BackButton'
 import LogoutButton from '../../LogoutButton/LogoutButtonContainer'
+import RankingTabs from '../../RankingTabs/RankingTabsContainer';
 
 type Props = {
 
@@ -18,6 +19,7 @@ export default class RankingPage extends Component<Props> {
           <h2 className={styles.titlebar}>Ranking</h2>
         </div>
         <div className={styles.mainBlock}>
+          <RankingTabs />
         </div>
         <LogoutButton />
       </div>

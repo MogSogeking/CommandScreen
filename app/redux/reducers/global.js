@@ -7,6 +7,7 @@ import { makeReducer } from '../../utils/utils'
 import {
   CHECK_PROFILE,
   PURGE_PROFILE,
+  LOAD_PROFILES,
 } from '../actions/global'
 
 import {
@@ -30,6 +31,7 @@ const actions = {
     console.log(profile)
     return set(state, 'profile', profile)
   },
+  [LOAD_PROFILES]: (state, { profiles }) => set(state, 'profiles', profiles)
 }
 
 export const global = makeReducer(initState, actions)
