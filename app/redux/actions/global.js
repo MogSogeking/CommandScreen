@@ -21,7 +21,6 @@ export const purgeProfile = () => ({ type: PURGE_PROFILE })
 export const LOAD_PROFILES = 'LOAD_PROFILES'
 
 export const loadProfiles = () => dispatch => {
-  console.log("we there")
   fetch(`${backendApiUrl}/profiles`)
     .then(response => response.json())
     .then(data => {

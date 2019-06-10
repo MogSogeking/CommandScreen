@@ -2,5 +2,12 @@
   outline: 2px solid;
   height: 50px;
   margin: 2px;
-  width: 100%;
+  width: calc(100% - 4px);
+}
+
+.logged {
+  outline: 2px solid red;
+  height: 50px;
+  margin: 2px;
+  width: calc(100% - 4px);
 }

@@ -28,8 +28,6 @@ export default class AchievementsTabs extends Component<Props> {
         return achievement.id === item.id
       }
       const achievementWithCompletion = Object.assign({isCompleted: !!profile.achievements.find(findCompleted)}, item)
-      console.log(profile.achievements)
-      console.log(achievementWithCompletion)
       return <AchievementItem key={item.id} achievement={achievementWithCompletion} />
     })
   }

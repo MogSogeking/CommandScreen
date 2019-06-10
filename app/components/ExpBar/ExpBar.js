@@ -10,12 +10,12 @@ export default class ExpBar extends Component<Props> {
   props: Props
 
   render() {
-    let sum = 0;
+    /*let sum = 0;
     for(let i = 1 ; i < 101 ; i++) {
       sum += computeRequiredExp(i)
       console.log(computeRequiredExp(i))
     }
-    console.log(sum)
+    console.log(sum)*/
     const { profile } = this.props
     const percents = `${100*profile.experience / computeRequiredExp(profile.level)}%`
     const width = { width: percents }

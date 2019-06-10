@@ -28,7 +28,6 @@ const actions = {
   },
   [PURGE_PROFILE]: state => set(state, 'profile', {}),
   [UPDATE_PROFILE]: (state, { profile }) => {
-    console.log(profile)
     return set(state, 'profile', profile)
   },
   [LOAD_PROFILES]: (state, { profiles }) => set(state, 'profiles', profiles)

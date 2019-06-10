@@ -61,7 +61,6 @@ export const sendCommand = (id, cart) => dispatch => {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data)
       dispatch({
         type: UPDATE_PROFILE,
         profile: data,

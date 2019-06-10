@@ -5,13 +5,15 @@ type Props = {
   profile: object,
   display: String,
   achievementsTotal: Number,
+  index: Number,
+  loggedProfile: Boolean,
 };
 
 export default class RankingItem extends Component<Props> {
   props: Props;
 
   render() {
-    const { profile, display, achievementsTotal } = this.props
+    const { profile, display, achievementsTotal, index, loggedProfile } = this.props
     let formattedDisplay
     if(display === 'level') {
       formattedDisplay = `Lv.${profile.level} Exp: ${profile.experience}`
@@ -23,8 +25,8 @@ export default class RankingItem extends Component<Props> {
       formattedDisplay = `${profile.level}`
     }
     return (
-      <div className={styles.container}>
-        <h3>{profile.pseudo} {formattedDisplay}</h3>
+      <div className={loggedProfile ? styles.logged : styles.container}>
+        {index} {profile.pseudo} {formattedDisplay}
       </div>
     )
   }
